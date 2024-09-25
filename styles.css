@@ -1,0 +1,263 @@
+:root {
+  --color-primary: #0b3584;
+  --color-primary-dark: #082a6a;
+  --color-secondary: #F6E05E;
+  --color-accent: #D69E2E;
+  --color-background: #f6f5f4;
+  --color-text: #2D3748;
+  --ripple-color: rgba(11, 53, 132, 0.3);
+}
+
+/* Existing styles remain unchanged 0b3584*/
+
+.team-member {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member .relative {
+  flex: 1;
+  min-height: 400px;
+}
+
+.team-member .p-6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member .p-6 p {
+  flex: 1;
+}
+/* Add these new styles for the water drop comet animation */
+.water-drop-comet {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uECI3oLCrs5LwNUXMV6zvOWkg3BEq7.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  transform: rotate(-90deg);
+  pointer-events: none;
+}
+
+@keyframes moveRightComet {
+  0% {
+    transform: translateX(-100%) rotate(-90deg);
+  }
+  100% {
+    transform: translateX(100vw) rotate(-90deg);
+  }
+}
+
+/* Rest of the existing styles remain unchanged */
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-background { background-color: var(--color-background); }
+
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-background { color: var(--color-background); }
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary);
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: var(--ripple-color);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.btn-primary:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.nav-item {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: var(--color-accent);
+}
+
+.impact-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding: 2rem;
+  text-align: center;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 1s ease-in 0.5s;
+  animation-fill-mode: both;
+}
+
+#imageCarousel {
+  height: 400px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#imageCarousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+#imageCarousel img.active {
+  opacity: 1;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* New styles for the updated hero section */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to top, var(--color-primary-dark), transparent);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  #imageCarousel {
+    height: 300px;
+  }
+}
+
+.text-primary-dark {
+  color: var(--color-primary-dark);
+}

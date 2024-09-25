@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Ripple Foundation - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-background text-text">
+    <nav id="navbar" class="sticky top-0 z-10 transition-all duration-300 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1DOKtciz5OzK7I13Lp68Gr5R0OJxAB.png" alt="Pure Ripple Logo" class="h-10 w-10">
+                <span class="text-xl font-semibold text-primary">Pure Ripple Foundation</span>
+            </a>
+            <div class="md:hidden">
+                <button id="menuToggle" class="text-primary">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="nav-item text-primary hover:text-accent transition-colors">Home</a></li>
+                <li><a href="about.html" class="nav-item text-primary hover:text-accent transition-colors">About</a></li>
+                <li><a href="projects.html" class="nav-item text-primary hover:text-accent transition-colors">Projects</a></li>
+                <li><a href="team.html" class="nav-item text-primary hover:text-accent transition-colors">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-primary py-20 md:py-32 relative overflow-hidden">
+        <div id="waterDropComets" class="absolute inset-0 z-0 overflow-hidden"></div>
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between relative z-10">
+            <div class="text-center md:text-left md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold text-secondary mb-4 animate-fade-in leading-tight">
+                    Start creating<br>pure ripples of change
+                </h1>
+                <p class="text-lg md:text-xl text-background mb-8 animate-fade-in-delay max-w-lg">
+                    Empowering communities through sustainable water solutions and breaking the cycle of poverty.
+                </p>
+                <a href="projects.html" class="inline-flex items-center bg-accent hover:bg-secondary text-primary px-6 py-3 rounded-full transition-colors text-lg font-semibold relative z-10">
+                    Our Projects
+                    <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                </a>
+            </div>
+            <div id="imageCarousel" class="md:w-1/2 flex justify-center md:justify-end relative h-96 w-96">
+                <!-- Images will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="absolute inset-0 z-0">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0,0 L100,0 L100,100 Q50,20 0,100 Z" fill="currentColor" class="text-primary-dark"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                    <h1 class="text-4xl font-semibold text-primary mb-3">About Pure Ripple Foundation</h1>
+                    <p class="text-lg text-text">
+                        Pure Ripple Foundation is dedicated to providing clean water to communities in Southeast Asia. We believe that access to safe and clean water is not just a fundamental human right, but also a pivotal step in lifting communities out of poverty. By implementing sustainable and community-driven water solutions, we seek to create lasting impact—improving health outcomes, increasing access to education, and fostering economic empowerment. Our mission extends beyond providing clean water; we aim to equip communities with the resources and knowledge they need to thrive independently and sustainably.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="bg-gray-100 py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-semibold text-primary mb-8 text-center">Our Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="impact-card">
+                        <i data-lucide="droplet" class="h-12 w-12 text-accent"></i>
+                        <h3 class="text-3xl font-bold text-primary mb-2">1</h3>
+                        <p class="text-lg text-text">Wells Built</p>
+                    </div>
+                    <div class="impact-card">
+                        <i data-lucide="users" class="h-12 w-12 text-accent"></i>
+                        <h3 class="text-3xl font-bold text-primary mb-2">100+</h3>
+                        <p class="text-lg text-text">Lives Improved</p>
+                    </div>
+                    <div class="impact-card">
+                        <i data-lucide="globe" class="h-12 w-12 text-accent"></i>
+                        <h3 class="text-3xl font-bold text-primary mb-2">1</h3>
+                        <p class="text-lg text-text">Region Reached</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-semibold text-primary mb-6 text-center">Learn More About Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+                        <h3 class="text-3xl font-semibold text-primary mb-3">Our Team</h3>
+                        <p class="text-lg text-text mb-3">Meet the dedicated individuals behind Pure Ripple Foundation who are working tirelessly to bring clean water to communities in need.</p>
+                        <a href="team.html" class="text-accent hover:text-primary transition-colors">Learn more about our team &rarr;</a>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+                        <h3 class="text-3xl font-semibold text-primary mb-3">About Us</h3>
+                        <p class="text-lg text-text mb-3">Discover our mission, vision, and the values that drive our commitment to providing sustainable water solutions.</p>
+                        <a href="about.html" class="text-accent hover:text-primary transition-colors">Learn more about our organization &rarr;</a>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg shadow-lg p-4">
+                        <h3 class="text-3xl font-semibold text-primary mb-3">Our Projects</h3>
+                        <p class="text-lg text-text mb-3">Explore the various water projects we've implemented and the communities we've impacted across Southeast Asia.</p>
+                        <a href="projects.html" class="text-accent hover:text-primary transition-colors">View our projects &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-secondary py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Pure Ripple Foundation</p>
+            <p class="mb-2">Email: pureripple@gmail.com</p>
+            <p>Instagram: @pureripplefoundation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Ripple Foundation - About</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @keyframes moveWaterDrop {
+            0% {
+                left: -50px;
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                left: 100%;
+                opacity: 0;
+            }
+        }
+        .water-drop-comet {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            animation: moveWaterDrop linear infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-background text-text">
+    <nav id="navbar" class="sticky top-0 z-10 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1DOKtciz5OzK7I13Lp68Gr5R0OJxAB.png" alt="Pure Ripple Logo" class="h-10 w-10">
+                <span class="text-xl font-semibold text-primary">Pure Ripple Foundation</span>
+            </a>
+            <div class="md:hidden">
+                <button id="menuToggle" class="text-primary">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="projects.html" class="nav-item">Projects</a></li>
+                <li><a href="team.html" class="nav-item">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <section class="bg-primary py-20 relative overflow-hidden">
+            <div id="waterDropComets" class="absolute inset-0 z-0"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <h1 class="text-5xl font-bold text-white mb-4 text-center">About Pure Ripple Foundation</h1>
+                <p class="text-xl text-white text-center max-w-3xl mx-auto">
+                    Dedicated to providing clean water and creating lasting change in third world countries.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="bg-background p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-primary mb-6 text-center">Our Organization</h2>
+                    <p class="text-lg mb-4">
+                        Pure Ripple Foundation is a non-profit organization committed to providing sustainable access to clean water for communities in need throughout third world countries. Our mission is rooted in the belief that access to safe water is a fundamental human right and a crucial step towards breaking the cycle of poverty.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Our approach is centered on close collaboration with local communities. We work hand-in-hand with residents, local leaders, and experts to implement tailored water solutions that meet the specific needs of each area we serve. This collaborative effort ensures that our projects are not only effective but also sustainable in the long term.
+                    </p>
+                    <p class="text-lg mb-4">
+                        The impact of our work extends far beyond just providing clean water. By improving access to this vital resource, we're helping to enhance health outcomes, enable better educational opportunities, and foster economic growth in the communities we serve. Each well we build and every life we touch creates a ripple effect of positive change.
+                    </p>
+                    <p class="text-lg">
+                        At Pure Ripple Foundation, we're not just building wells; we're building hope, health, and a brighter future for generations to come. Join us in our mission to make clean water accessible to all.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-background">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-primary mb-8 text-center">Our Journey</h2>
+                <div class="max-w-2xl mx-auto">
+                    <div class="flex mb-4">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-primary"></div>
+                            <div class="w-4 h-4 rounded-full bg-accent border-4 border-primary"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-accent font-bold">February 3 2024</p>
+                            <p class="text-gray-700">Pure Ripple Foundation established</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-primary"></div>
+                            <div class="w-4 h-4 rounded-full bg-accent border-4 border-primary"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-accent font-bold">March 4 2024</p>
+                            <p class="text-gray-700">Started campaign</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-primary"></div>
+                            <div class="w-4 h-4 rounded-full bg-accent border-4 border-primary"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-accent font-bold">June 21 2024</p>
+                            <p class="text-gray-700">Received a grant from Apex Peak Fest</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-primary"></div>
+                            <div class="w-4 h-4 rounded-full bg-accent border-4 border-primary"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-accent font-bold">June 24 2024</p>
+                            <p class="text-gray-700">Reached our campaign goal</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-primary"></div>
+                            <div class="w-4 h-4 rounded-full bg-accent border-4 border-primary"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-accent font-bold">July 8 2024</p>
+                            <p class="text-gray-700">Became a 501(c)(3) organization</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="flex flex-col items-center mr-4">
+                            <div class="w-px h-full bg-primary"></div>
+                            <div class="w-4 h-4 rounded-full bg-accent border-4 border-primary"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm text-accent font-bold">September 16 2024</p>
+                            <p class="text-gray-700">First well is completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-primary mb-8 text-center">Our Values</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-background p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Sustainability</h3>
+                        <p>We focus on long-term solutions that empower communities to maintain their water sources.</p>
+                    </div>
+                    <div class="bg-background p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Transparency</h3>
+                        <p>We are committed to open communication and accountability in all our operations.</p>
+                    </div>
+                    <div class="bg-background p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
+                        <p>We partner with local organizations and communities to ensure culturally appropriate solutions.</p>
+                    </div>
+                    <div class="bg-background p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+                        <p>We continuously seek new and improved methods to provide clean water efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-primary text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Join Our Cause</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Together, we can make a lasting impact on communities in need. Your support can help us reach more people with clean water.
+                </p>
+                <a href="https://www.launchgood.com/v4/campaign/pure_ripple_foundation" class="bg-accent text-primary font-bold py-3 px-8 rounded-full hover:bg-secondary transition duration-300 inline-block">
+                    Donate Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-secondary py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Pure Ripple Foundation</p>
+            <p class="mb-2">Email: pureripple@gmail.com</p>
+            <p>Instagram: @pureripplefoundation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Improved Comet animation
+        function createWaterDropComet() {
+            const comet = document.createElement('div');
+            comet.className = 'water-drop-comet';
+            comet.style.top = `${Math.random() * 100}%`;
+            comet.style.animationDuration = `${10 + Math.random() * 5}s`;
+            document.getElementById('waterDropComets').appendChild(comet);
+
+            comet.addEventListener('animationend', () => {
+                comet.remove();
+                createWaterDropComet();
+            });
+        }
+
+        // Start creating comets after a short delay
+        setTimeout(() => {
+            for (let i = 0; i < 10; i++) {
+                setTimeout(createWaterDropComet, i * 500); // Stagger the creation of comets
+            }
+        }, 500);
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Ripple Foundation - Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-background text-text">
+    <nav id="navbar" class="sticky top-0 z-10 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1DOKtciz5OzK7I13Lp68Gr5R0OJxAB.png" alt="Pure Ripple Logo" class="h-10 w-10">
+                <span class="text-xl font-semibold text-primary">Pure Ripple Foundation</span>
+            </a>
+            <div class="md:hidden">
+                <button id="menuToggle" class="text-primary">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="projects.html" class="nav-item">Projects</a></li>
+                <li><a href="team.html" class="nav-item">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-primary mb-12 text-center">Our Team</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="team-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <div class="relative h-96 md:h-[28rem]">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-rKgxieimjUWOCLQRxLmdhBTfugOU8J.png" alt="Hemanth Sudhaharan" class="object-cover object-top w-full h-full">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-primary mb-2">Hemanth Sudhaharan</h3>
+                            <h4 class="text-lg font-medium text-accent mb-4">Founder & Executive Director</h4>
+                            <p class="text-text flex-grow">Hemanth Sudhaharan is the visionary founder and executive director of Pure Ripple Foundation. With a passion for sustainable development and clean water access, Hemanth leads the organization's efforts to empower communities in Southeast Asia through innovative water solutions.</p>
+                        </div>
+                    </div>
+                    <div class="team-member bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <div class="relative h-96 md:h-[28rem]">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fOu7XxlloeQGG8lCwCtPEkwVBOfWdm.png" alt="Lucky Pawar" class="object-cover object-top w-full h-full">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-primary mb-2">Lucky Pawar</h3>
+                            <h4 class="text-lg font-medium text-accent mb-4">Director of Operations</h4>
+                            <p class="text-text flex-grow">Lucky Pawar brings extensive experience in project management and community engagement to his role as Director of Operations. His strategic approach and dedication to sustainability ensure that Pure Ripple's projects create lasting impact in the communities we serve.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-secondary py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Pure Ripple Foundation</p>
+            <p class="mb-2">Email: pureripple@gmail.com</p>
+            <p>Instagram: @pureripplefoundation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

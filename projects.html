@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Ripple Foundation - Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-background text-text">
+    <nav id="navbar" class="sticky top-0 z-10 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1DOKtciz5OzK7I13Lp68Gr5R0OJxAB.png" alt="Pure Ripple Logo" class="h-10 w-10">
+                <span class="text-xl font-semibold text-primary">Pure Ripple Foundation</span>
+            </a>
+            <div class="md:hidden">
+                <button id="menuToggle" class="text-primary">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <ul id="navMenu" class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="projects.html" class="nav-item">Projects</a></li>
+                <li><a href="team.html" class="nav-item">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-primary mb-12 text-center">Our Projects</h1>
+                <div class="grid grid-cols-1 gap-8">
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6zqgRtDOxGLvTK72UTh1lEG4JICTDi.png" alt="Clean Water for Village A" class="w-full h-48 md:h-56 lg:h-64 object-cover object-center">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-primary mb-2">Clean Water for Village A</h3>
+                            <p class="text-text mb-4">Providing clean water to 100 residents in Village A through the construction of a new well.</p>
+                            <div class="hidden-content hidden mb-4">
+                                <p class="text-text">This project aims to address the critical need for clean water in Village A. By constructing a new well, we will provide sustainable access to safe drinking water, improving health outcomes and quality of life for the community. The project includes community education on water management and hygiene practices to ensure long-term impact.</p>
+                            </div>
+                            <button class="learn-more-btn btn-primary w-full">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-secondary py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Pure Ripple Foundation</p>
+            <p class="mb-2">Email: pureripple@gmail.com</p>
+            <p>Instagram: @pureripplefoundation</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreBtn = document.querySelector('.learn-more-btn');
+            const hiddenContent = document.querySelector('.hidden-content');
+
+            learnMoreBtn.addEventListener('click', function() {
+                hiddenContent.classList.toggle('hidden');
+                learnMoreBtn.textContent = hiddenContent.classList.contains('hidden') ? 'Learn More' : 'Show Less';
+            });
+        });
+    </script>
+</body>
+</html>
